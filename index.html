@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
 </head>
 <header>
-    <a  class="logo" href="./index.html">
+    <a class="logo" href="./index.html">
     <span>Web</span>Studio 
     </a>
     <nav>
@@ -25,86 +26,98 @@
 </header>
 <main>
     <section>
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+        <div class="button-container">
+            <p class="button-text">Ефективні рішення для вашого бізнесу</p>
+            <button type="button" class="hero-button">Замовити послугу</button>
+        </div>
     </section>
 <body>
     <main>
-        <section>
-        <ul>
-            <li>
-                <p>УВАГА ДО ДЕТАЛЕЙ</p>
-                <h2>УВАГА ДО ДЕТАЛЕЙ </h2>
-                <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+        <section class="hero">
+        <ul class="hero-list">
+            <li class="hero-list_item">
+                <img src="./images/portfolio/antenna 1.svg" alt="#">
+                <h2 class="hero-link_text">УВАГА ДО ДЕТАЛЕЙ </h2>
+                <p class="hero-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
-            <li>
-                <p>LIFESTYLE</p>
-                <h2>ПУНКТУАЛЬНІСТЬ</h2>
-                <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            <li class="hero-list_item">
+                <img src="./images/portfolio/Vector (1).svg" alt="#">
+                <h2 class="hero-link_text">ПУНКТУАЛЬНІСТЬ</h2>
+                <p class="hero-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
-            <li>
-                <p>PHOTODAIRY</p>
-                <h2>ПЛАНУВАННЯ</h2>
-                <p>Так само консультація з широким активом значною мірою зумовлює</p>
+            <li class="hero-list_item">
+                <img src="./images/portfolio/astronaut 1.svg" alt="#">
+                <h2 class="hero-link_text">ПЛАНУВАННЯ</h2>
+                <p class="hero-text">Так само консультація з широким активом значною мірою зумовлює</p>
             </li>
-            <li>
-                <p>PHOTODAIRY</p>
-                <h2>СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-                <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            <li class="hero-list_item">
+                <img src="./images/portfolio/Vector.svg" alt="#">
+                <h2 class="hero-link_text">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+                <p class="hero-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
       </ul>
       </section>
-      <h2>Чим ми займаємося</h2>
-     <ul>
-        <li>
-            <img src="./card1.jpg" alt="Nout">
-        </li>
-        <li>
-            <img src="./card2.jpg" alt="Plantshet">
-        </li>
-        <li>
-            <img src="./img.jpg" alt="Telefon">
-        </li>
-     </ul>
-     <ul>
-        <section>
-        </section>
-        <p><h2>Наша Команда</h2></p>
-        <section>
-        <ul>
-            <li>
-                <img src="./card3.jpg" alt="Ігор Дем'яненко">
-                <p>Ігор Дем'яненко</p>
-                <p>Product Designer</p>
+      <section class="menu">
+        <h2 class="menu-heading">Чим ми займаємося</h2>
+        <ul class="menu-list">
+              <li class="menu-list_item">
+               <img src="./images/portfolio/card1.jpg" alt="Nout">
             </li>
-            <li>
-                <img src="./card4.jpg" alt="Ольга Репіна">
-                <p>Ольга Репіна</p>
-                <p>Frontend Developer</p>
+            <li class="menu-list_item">
+               <img src="./images/portfolio/card2.jpg" alt="Plantshet">
             </li>
-            <li>
-                <img src="./card5.jpg" alt="Микола Тарасов">
-                <p>Микола Тарасов</p>
-                <p>Marketing</p>
+             <li class="menu-list_item">
+               <img src="./images/portfolio/img.jpg" alt="Telefon">
             </li>
-            <li>
-                <img src="./card6.jpg" alt="Михайло Єрмаков">
-                <p>Михайло Єрмаков</p>
-                <p>UI Designer</p>
+        </ul>
+       </section>
+    <section class="quality">
+        <h2 class="quality-heading">Наша Команда</h2>
+        <ul class="quality-list">
+            <li class="quality-list_item">
+                <img src="./images/portfolio/card3.jpg" alt="Ігор Дем'яненко">
+                <p class="quality-text">Ігор Дем'яненко</p>
+                <p class="quality-text">Product Designer</p>
+            </li>
+            <li class="quality-list_item">
+                <img src="./images/portfolio/card4.jpg" alt="Ольга Репіна">
+                <p class="quality-text">Ольга Репіна</p>
+                <p class="quality-text">Frontend Developer</p>
+            </li>
+            <li class="quality-list_item">
+                <img src="./images/portfolio/card5.jpg" alt="Микола Тарасов">
+                <p class="quality-text">Микола Тарасов</p>
+                <p class="quality-text">Marketing</p>
+            </li>
+            <li class="quality-list_item">
+                <img src="./images/portfolio/card6.jpg" alt="Михайло Єрмаков">
+                <p class="quality-text">Михайло Єрмаков</p>
+                <p class="quality-text">UI Designer</p>
             </li>
         </ul>
      </ul>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <a class="logo"  href=".">
         <span>Web</span>Studio
     </a>
     <nav>
+        <ul class="footer-list">
+            <li class="footer-list_item"><a href="#"></a>м. Київ, пр-т Лесі Українки, 26</li>
+            <li class="footer-list_item"><a href="maito:info@devstudio.com"></a>info@devstudio.com</li>
+            <li class="footer-list_item"><a href="tel:+380961111111"></a>+380961111111</li>
+        </ul>
+    </nav>
+    <a  class="logo" href=".">
+        <span>Приєднуйся</span>
+    </a>
+    <nav>
         <ul>
-            <li><a href="#"></a>м. Київ, пр-т Лесі Українки, 26</li>
-            <li><a href="maito:info@devstudio.com"></a>info@devstudio.com</li>
-            <li><a href="tel:+380961111111"></a>+380961111111</li>
+            <li><img src="./images/portfolio/Ellipse (3).svg" alt="#"></li>
+            <li><img src="./images/portfolio/Ellipse.svg" alt="#"></li>
+            <li><img src="./images/portfolio/Ellipse (2).svg" alt="#"></li>
+            <li><img src="./images/portfolio/Ellipse (1).svg" alt="#"></li>
         </ul>
     </nav>
 </footer>

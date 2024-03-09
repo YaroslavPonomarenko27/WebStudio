@@ -1,0 +1,246 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Змінюємо колір тексту для кращої видимості */
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    background-image: url('/images/portfolio/Img.png'); /* Зображення як фон */
+    background-size: cover; /* Розтягуємо зображення, щоб воно вміщувалося в контейнер */
+    background-position: center; /* Вирівнюємо зображення по центру */
+    padding: 20px; /* Додаємо відступи внутрішньої області контейнера */
+    border-radius: 10px; /* Округлюємо кути контейнера */
+    text-align: center; /* Вирівнюємо текст по центру */
+}
+
+.button-text {
+    font-size: 48px; /* Збільшуємо розмір тексту на 48 пікселів */
+    color: #fff; /* Білий колір тексту */
+    padding: 10px 20px; /* Встановлюємо відступи всередині кнопки */
+    border-radius: 5px; /* Округлюємо кути кнопки */
+}
+
+.hero-button {
+    background-color: #007bff; /* Синій колір кнопки */
+    color: #fff; /* Білий колір тексту на кнопці */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-button:hover {
+    background-color: #0056b3; /* Змінюємо колір при наведенні */
+}
+
+
+
+
+.hero-button {
+    padding: 15px 30px; /* Збільшуємо відступи кнопки для кращої видимості */
+    font-size: 16px;
+    background-color: #b47b48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавна зміна кольору при наведенні */
+}
+
+.hero-button:hover {
+    background-color: rgba(236, 170, 18, 0.828);
+}
+
+
+.hero-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-list_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Вирівнюємо елементи по центру */
+    text-align: center; /* Вирівнюємо текст по центру */
+}
+
+.hero-link_text {
+    margin-top: 15px; /* Збільшуємо відстань між зображенням та заголовком */
+}
+
+.hero-text {
+    margin-top: 10px; /* Збільшуємо відстань між заголовком та текстом */
+}
+
+.menu-list_item img {
+    width: 100px; /* Збільшуємо розмір картинок */
+    height: 100px; /* Збільшуємо розмір картинок */
+}
+
+/* Menu styles */
+.menu {
+    text-align: center;
+}
+
+.menu-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-list_item img {
+    width: 500px; /* Замініть на бажаний розмір */
+    height: 400px; /* Замініть на бажаний розмір */
+}
+
+
+/* Quality styles */
+.quality {
+    text-align: center;
+}
+
+.quality-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.quality-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quality-list_item {
+    flex: 0 0 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quality-list_item img {
+    width: 400px;
+    height: 400px;
+}
+
+.quality-text {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+
+
+.footer-list_item {
+    display: block; /* Встановлюємо блоковий вигляд для елементів */
+    margin-bottom: 10px; /* Додаємо внутрішній відступ між елементами */
+}
+
+.footer-list_item:last-child {
+    margin-right: 0; /* Видаляємо правий зовнішній відступ для останнього елемента */
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.social-media-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-media-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media-list_item {
+    margin-bottom: 5px;
+}
+
+.social-media-list_item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
