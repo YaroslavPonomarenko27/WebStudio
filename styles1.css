@@ -7,10 +7,10 @@
 
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333; /* Змінюємо колір тексту для кращої видимості */
+    color: #333;
 }
 
 /* Header styles */
@@ -58,24 +58,24 @@ h1 {
 }
 
 .button-container {
-    background-image: url('/images/portfolio/Img.png'); /* Зображення як фон */
-    background-size: cover; /* Розтягуємо зображення, щоб воно вміщувалося в контейнер */
-    background-position: center; /* Вирівнюємо зображення по центру */
-    padding: 20px; /* Додаємо відступи внутрішньої області контейнера */
-    border-radius: 10px; /* Округлюємо кути контейнера */
-    text-align: center; /* Вирівнюємо текст по центру */
+    background-image: url('/images/portfolio/Img.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .button-text {
-    font-size: 48px; /* Збільшуємо розмір тексту на 48 пікселів */
-    color: #fff; /* Білий колір тексту */
-    padding: 10px 20px; /* Встановлюємо відступи всередині кнопки */
-    border-radius: 5px; /* Округлюємо кути кнопки */
+    font-size: 48px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 .hero-button {
-    background-color: #007bff; /* Синій колір кнопки */
-    color: #fff; /* Білий колір тексту на кнопці */
+    background-color: #007bff;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
@@ -84,27 +84,8 @@ h1 {
 }
 
 .hero-button:hover {
-    background-color: #0056b3; /* Змінюємо колір при наведенні */
+    background-color: #0056b3;
 }
-
-
-
-
-.hero-button {
-    padding: 15px 30px; /* Збільшуємо відступи кнопки для кращої видимості */
-    font-size: 16px;
-    background-color: #b47b48;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавна зміна кольору при наведенні */
-}
-
-.hero-button:hover {
-    background-color: rgba(236, 170, 18, 0.828);
-}
-
 
 .hero-list {
     display: flex;
@@ -116,24 +97,18 @@ h1 {
 .hero-list_item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Вирівнюємо елементи по центру */
-    text-align: center; /* Вирівнюємо текст по центру */
+    align-items: center;
+    text-align: center;
 }
 
 .hero-link_text {
-    margin-top: 15px; /* Збільшуємо відстань між зображенням та заголовком */
+    margin-top: 15px;
 }
 
 .hero-text {
-    margin-top: 10px; /* Збільшуємо відстань між заголовком та текстом */
+    margin-top: 10px;
 }
 
-.menu-list_item img {
-    width: 100px; /* Збільшуємо розмір картинок */
-    height: 100px; /* Збільшуємо розмір картинок */
-}
-
-/* Menu styles */
 .menu {
     text-align: center;
 }
@@ -149,12 +124,6 @@ h1 {
     justify-content: space-around;
 }
 
-.menu-list_item img {
-    width: 500px; /* Замініть на бажаний розмір */
-    height: 400px; /* Замініть на бажаний розмір */
-}
-
-
 /* Quality styles */
 .quality {
     text-align: center;
@@ -169,24 +138,96 @@ h1 {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
+/* Оновлення стилів для елементів команди */
 .quality-list_item {
-    flex: 0 0 200px;
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex; /* Встановлюємо відображення у вигляді гнучкого контейнера */
+    flex-direction: column; /* Встановлюємо напрямок стовпця */
+    align-items: center; /* Вирівнюємо елементи по центру по горизонталі */
+    text-align: center; /* Вирівнюємо текст по центру */
+    margin-bottom: 20px; /* Додатковий відступ між елементами */
 }
 
-.quality-list_item img {
-    width: 400px;
-    height: 400px;
+/* Оновлення стилів для іконок соціальних мереж */
+.social-media-icons {
+    margin-top: 10px; /* Відступ від тексту */
 }
+
+.social-media-icon {
+    width: 40px; 
+    height: 90px; 
+    margin-right: 5px; 
+}
+
+.quality-list_item:nth-child(1) img,
+.quality-list_item:nth-child(2) img,
+.quality-list_item:nth-child(3) img,
+.quality-list_item:nth-child(4) img {
+    max-width: 900px; 
+    height: auto;
+}
+
+.medium-image {
+    width: 200px; 
+    height: auto; 
+}
+
+
+.social-media-icon, .quality-media-icon {
+    margin-top: 10px; 
+}
+
+
+
+.quality-list_item img {
+    max-width: 100px; 
+    height: auto; 
+}
+
 
 .quality-text {
     font-size: 18px;
     margin-top: 10px;
+}
+/* Clientage styles */
+.clientage {
+    text-align: center;
+}
+
+.clientage-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Оновлення стилів для списку клієнтів */
+.clientage-list {
+    list-style: none; /* Видаляємо маркери */
+    padding: 0; /* Встановлюємо відступи в нуль */
+    display: flex; /* Встановлюємо відображення у вигляді гнучкого контейнера */
+    justify-content: center; /* Вирівнюємо елементи по центру по горизонталі */
+    flex-wrap: wrap; /* Дозволяємо елементам зміщуватися на наступний рядок при необхідності */
+}
+
+.clientage-list_item {
+    margin: 5px; /* Додаємо невеликий відступ між елементами */
+}
+
+
+.clientage-list_item img {
+    width: 200px; 
+    height: auto; 
+    border: 2px solid #000; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin: 5px; 
+}
+/* Додайте стилі для SVG-зображень при наведенні курсору */
+.clientage-list_item img:hover {
+    border-color: blue; /* Змінюємо колір контуру на червоний */
+    cursor: pointer; /* Змінюємо вигляд курсору */
 }
 
 /* Footer styles */
@@ -195,52 +236,100 @@ h1 {
     color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.footer-list {
-    list-style: none;
-    padding: 0;
+/* Зміни не потрібні для класу .column, .web-studio і .photos */
+
+/* Зробити перші три літери заголовка Web Studio синіми */
+.footer .logo span:first-of-type {
+    color: blue;
+}
+
+/* Розташувати обидві колонки горизонтально */
+.footer nav,
+.footer ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+}
+
+.web-studio {
+    text-align: right;
+}
+
+.photos {
+    text-align: left;
+}
+.footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.footer-list li {
-    margin-bottom: 10px;
+.column {
+    margin-top: 20px; /* Додайте відступ для відокремлення колонок */
 }
 
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
-
-.footer-list_item {
-    display: block; /* Встановлюємо блоковий вигляд для елементів */
-    margin-bottom: 10px; /* Додаємо внутрішній відступ між елементами */
+    .column {
+        flex: 1; /* Розподілити доступне простору рівномірно між колонками */
+        margin-top: 0; /* Зняти верхній відступ у великих екранах */
+        text-align: left; /* Вирівняти текст у колонках ліворуч */
+    }
 }
-
-.footer-list_item:last-child {
-    margin-right: 0; /* Видаляємо правий зовнішній відступ для останнього елемента */
-}
-
-.footer-nav {
+.footer {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    text-align: center;
 }
 
-.social-media-title {
-    font-size: 14px;
-    margin-bottom: 10px;
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px; /* Задайте максимальну ширину контенту футера */
+    margin: 0 auto; /* Центрувати контент футера */
 }
 
-.social-media-list {
-    list-style: none;
-    padding: 0;
+.column {
+    width: 48%; /* Задайте ширину колонки */
+    margin-bottom: 20px; /* Додайте відступ між колонками */
 }
 
-.social-media-list_item {
-    margin-bottom: 5px;
+@media (min-width: 768px) {
+    .column {
+        width: auto; /* Переключіть ширину колонок на автоматичне для більших екранів */
+        margin-bottom: 0; /* Зняти відступ між колонками для більших екранів */
+    }
+}
+.clientage-images {
+    display: flex;
+    justify-content: center; /* Вирівнюємо по центру по горизонталі */
+    flex-wrap: wrap; /* Дозволяє рядку переноситися на новий рядок, якщо фотографій багато */
 }
 
-.social-media-list_item img {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
+.clientage-images img {
+    width: 100px; /* Розміри картинок */
+    height: auto;
+    margin: 5px; /* Додаткові відступи між картинками */
 }
