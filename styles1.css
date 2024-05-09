@@ -14,8 +14,8 @@ body {
 }
 
 /*! Контейнер - обгортає відразу увесь контент або секції */
-.container {
-    width: 1200px;
+.header-container {
+    width: 1800px;
     margin: 0 auto;
     padding: 0 15px;
     outline: 1px dashed rgb(252, 250, 250);
@@ -35,13 +35,16 @@ header {
     text-decoration: none;
     color: black;
     font-size: 24px;
+    position: relative;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-
+    text-align: center;
+    position: relative;
+    left: 10px;
 }
 
 nav ul li{
@@ -50,7 +53,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: rgb(10, 10, 10);
 }
 
 /* Main styles */
@@ -68,6 +71,14 @@ h1 {
 }
 
 .button-container {
+    width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px dashed rgb(252, 250, 250);
+    }
+
+.button-container {
     background-image: url('/images/portfolio/Img.png');
     background-size: cover;
     background-position: center;
@@ -79,19 +90,23 @@ h1 {
 
 .button-text {
     font-size: 48px;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    position: relative;
+    top: 230px;
 }
 
 .hero-button {
-    background-color: #007bff;
+    background-color: #0d9eff;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
+    position: relative;
+    top: 250px;
 }
 
 .hero-button:hover {
@@ -119,7 +134,7 @@ h1 {
 .hero-text {
     margin-top: 10px;
 }
-.container {
+.main-container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
