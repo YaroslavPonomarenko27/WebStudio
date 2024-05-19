@@ -24,7 +24,7 @@ body {
 
 /*! Контейнер - обгортає відразу увесь контент або секції */
 .header-container {
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     outline: 1px dashed rgb(252, 250, 250);
@@ -106,7 +106,7 @@ h1 {
     margin: 0 auto;
     padding: 0 15px;
     outline: 1px dashed rgb(252, 250, 250);
-    background-image: url('/images/portfolio/Img.png');
+    background-image: url(../images/portfolio/Img.png);
     background-size: cover;
     background-position: center;
     text-align: center;
