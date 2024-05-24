@@ -17,11 +17,23 @@
 /* Global styles */
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
+    font-size: 16px; 
+    font-style: normal; 
+    font-weight: 500; 
+    line-height: normal; 
 }
 
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,p,h1,h2,h3,button{
+    margin: 0;
+}
 /*! Контейнер - обгортає відразу увесь контент або секції */
 .header-container {
     width: 1200px;
