@@ -1,3 +1,19 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-list {
+    list-style-type: none;
+}
+
+.header-list_item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
 /* Загальні стилі */
 body {
     font-family: 'Roboto', sans-serif;
@@ -246,4 +262,13 @@ ul {
         margin-top: 0;
         text-align: left;
     }
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-between;
+    max-width: 1000px; /* Задайте максимальну ширину контенту футера */
+    margin: 0 auto; /* Центрувати контент футера */
 }
