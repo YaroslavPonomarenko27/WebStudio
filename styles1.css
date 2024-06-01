@@ -1,199 +1,111 @@
-/* Reset styles */
-* {
+/* Загальні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header-list {
-    list-style-type: none;
-}
-
-.header-list_item {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-/* Global styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px; 
-    font-style: normal; 
-    font-weight: 500; 
-    line-height: normal; 
-}
-
-ul{
-    list-style-type: none;
-}
-
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
-ul,p,h1,h2,h3,button{
+
+ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
+/* Шапка */
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-/*! Контейнер - обгортає відразу увесь контент або секції */
 .header-container {
-    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    outline: 1px dashed rgb(252, 250, 250);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    }
-    
-/* Header styles */
-header {
-    background-color: white;
-    color: black; 
-    padding: 20px;
 }
 
-.header-list {
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nav .header-list {
     display: flex;
-    justify-content: flex-end;
-    gap: 50px;
+    gap: 20px;
+}
+
+.header-link {
+    color: #333;
+    font-weight: 500;
 }
 
 .contacts {
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.header-list_item {
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-    right: 20%;
-    top: -20%
-}
-
-a:hover {
-    color: blue;
-}
-
-.logo { 
-    font-size: 30px; 
-    font-family: "Raleway", sans-serif; 
-    font-weight: 700; 
-    color: var(--web-studio-blue); 
-    letter-spacing: 0.90px; 
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+/* Герой-секція */
+.button {
+    background-color: #e9ecef;
+    padding: 50px 0;
     text-align: center;
-    position: relative;
-    left: 10px;
-    top: -30%;
 }
-
-nav ul li{
-    margin-right: 20px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: rgb(10, 10, 10);
-}
-
-/* Main styles */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.button-container {
-    width: 1600px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 0 15px;
-    outline: 1px dashed rgb(252, 250, 250);
-    background-image: url(../images/portfolio/Img.png);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    }
-
-.button-container {
-    padding: 20px;
-    border-radius: 10px;
-}
-
 
 .button-text {
-    font-size: 48px;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    position: relative;
-    top: 230px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .hero-button {
-    background-color: #0d9eff;
-    color: #fff;
-    border: none;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
     cursor: pointer;
-    border-radius: 5px;
-    position: relative;
-    top: 250px;
 }
 
-.hero-button:hover {
-    background-color: #0056b3;
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+/* Секція Hero */
 .hero-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .hero-list_item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    max-width: 200px;
+    margin: 20px;
 }
 
 .hero-link_text {
-    margin-top: 15px;
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 .hero-text {
-    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
 }
-.main-container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    outline: 1px dashed rgb(252, 250, 250);
-    }
 
-/*Menu*/
+/* Секція Menu */
 .menu {
     text-align: center;
 }
@@ -204,25 +116,20 @@ h1 {
 }
 
 .menu-list {
-    list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
-.menu-list_item {
-    margin-right: 5px; /* Зменшуємо відстань між фото */
+.menu-list_item img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    outline: 1px dashed rgb(252, 250, 250);
-    }
-
-/* Quality styles */
+/* Секція Quality */
 .quality {
     text-align: center;
+    padding: 50px 0;
 }
 
 .quality-heading {
@@ -231,183 +138,98 @@ h1 {
 }
 
 .quality-list {
-    list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-/* Оновлення стилів для елементів команди */
-
 .quality-list_item {
-    display: flex; /* Встановлюємо відображення у вигляді гнучкого контейнера */
-    flex-direction: column; /* Встановлюємо напрямок стовпця */
-    align-items: center; /* Вирівнюємо елементи по центру по горизонталі */
-    text-align: center; /* Вирівнюємо текст по центру */
-    margin-bottom: 20px; /* Додатковий відступ між елементами */
-}
-
-/* Оновлення стилів для іконок соціальних мереж */
-.social-media-icons {
-    margin-top: 10px; /* Відступ від тексту */
-}
-
-.social-media-icon {
-    width: 40px; 
-    height: 90px; 
-    margin-right: 5px; 
-}
-
-.quality-list_item:nth-child(1) img,
-.quality-list_item:nth-child(2) img,
-.quality-list_item:nth-child(3) img,
-.quality-list_item:nth-child(4) img {
-    max-width: 900px; 
-    height: auto;
-}
-
-.medium-image {
-    width: 200px; 
-    height: auto; 
-}
-
-
-.social-media-icon, .quality-media-icon {
-    margin-top: 10px; 
-}
-
-
-
-.quality-list_item img {
-    max-width: 100px; 
-    height: auto; 
-}
-
-
-.quality-text {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    outline: 1px dashed rgb(252, 250, 250);
-    }
-
-/* Clientage styles */
-.clientage{
+    max-width: 200px;
     text-align: center;
 }
 
-.clientage-heading{
+.quality-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.medium-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.social-media-icon {
+    width: 20px;
+    margin: 5px;
+}
+
+/* Секція Clientage */
+.clientage {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.clientage-heading {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-/* Оновлення стилів для списку клієнтів */
 .clientage-list {
-    list-style: none; /* Видаляємо маркери */
-    padding: 0; /* Встановлюємо відступи в нуль */
-    display: flex; /* Встановлюємо відображення у вигляді гнучкого контейнера */
-    justify-content: center; /* Вирівнюємо елементи по центру по горизонталі */
-    flex-wrap: wrap; /* Дозволяємо елементам зміщуватися на наступний рядок при необхідності */
-}
-
-.clientage-list_item {
-    margin: 5px; /* Додаємо невеликий відступ між елементами */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .clientage-list_item img {
-    width: 200px;
-    width: 200px; /* Розміри картинок */
-    height: auto;
-    border: 2px solid #000; 
-    border-radius: 5px; 
-    box-sizing: border-box; 
-    margin: 5px; 
-    border: 2px solid #000; /* Додаємо контур */
-    border-radius: 5px; /* Закруглюємо кути */
-    box-sizing: border-box; /* Обчислюємо розміри включаючи границі */
-    margin: 5px; /* Відступи між картинками */
+    width: 100px;
+    margin: 10px;
 }
 
-.clientage-list_item img:hover {
-    border-color: blue; /* Змінюємо колір контуру на червоний */
-    cursor: pointer; /* Змінюємо вигляд курсору */
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
 }
 
-.clientage-images {
+.footer .container {
     display: flex;
-    justify-content: center; /* Вирівнюємо по центру по горизонталі */
-    flex-wrap: wrap; /* Дозволяє рядку переноситися на новий рядок, якщо фотографій багато */
-}
-
-.clientage-images img {
-    width: 100px; /* Розміри картинок */
-    height: auto;
-    margin: 5px; /* Додаткові відступи між картинками */
-}
-
-.container {
-    width: 1200px;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
-    outline: 1px dashed rgb(252, 250, 250);
-    }
-
-/* Footer styles */
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 20px;
 }
 
-.footer .logo span:first-of-type {
-    color: blue;
+.footer .logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
 }
 
-.footer nav,
-.footer ul {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.column {
-    flex: 1;
-}
-
-.web-studio {
-    text-align: right;
-}
-
-.photos {
-    text-align: left;
-}
-
-.footer {
+.footer-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 5px;
+}
+
+.footer-column {
     text-align: center;
 }
 
-.column {
-    margin-top: 20px; /* Додайте відступ для відокремлення колонок */
+.footer-column .join-us {
+    font-weight: 700;
+    font-size: 18px;
 }
 
+.footer-column nav img {
+    width: 20px;
+    margin: 5px;
+}
+
+/* Адаптивний дизайн */
 @media (min-width: 768px) {
     .footer {
         flex-direction: row;
@@ -415,45 +237,13 @@ h1 {
         align-items: flex-start;
     }
 
+    .footer-column {
+        text-align: left;
+    }
+
     .column {
-        flex: 1; 
-        margin-top: 0; 
-        text-align: left; 
+        flex: 1;
+        margin-top: 0;
+        text-align: left;
     }
 }
-
-
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    justify-content: space-between;
-    max-width: 1000px; /* Задайте максимальну ширину контенту футера */
-    margin: 0 auto; /* Центрувати контент футера */
-}
-
-.column {
-    width: 48%; /* Задайте ширину колонки */
-    margin-bottom: 20px; /* Додайте відступ між колонками */
-}
-
-@media (min-width: 768px) {
-    .column {
-        width: auto; 
-        margin-bottom: 0; 
-    }
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    outline: 1px dashed rgb(252, 250, 250);
-    }
