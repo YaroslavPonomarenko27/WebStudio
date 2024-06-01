@@ -53,6 +53,10 @@ ul {
     padding: 0 20px;
 }
 
+a:hover {
+    color: blue;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -94,6 +98,11 @@ ul {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #0056b3;
+    transform: scale(0.95);
 }
 
 .main-container {
